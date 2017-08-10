@@ -52,6 +52,9 @@ foreach($html->find("/html/body/div/table/tbody/tr[1]/td/form/table/tbody/tr[7]/
 	 echo "$reg_no...\n";
   	sleep(1);
 	}
+	else{
+	$html = file_get_html($NewLink);
+	}
 }
 }
 }
