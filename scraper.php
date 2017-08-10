@@ -34,7 +34,7 @@ $NewLink	=	$url . $Alpha[$outterloop] . '&Y=' . $innerloop;
 $html 		= file_get_html($NewLink);
 foreach($html->find("/html/body/div/table/tbody/tr[1]/td/form/table/tbody/tr[7]/td/table/tbody") as $element)
 {
-	if($element)
+	if(is_object($element))
 	{
 		 $reg_no 		= $element->find("tr/td[2]/font" ,1)->plaintext;
 		 $reg_date 		= $element->find("tr/td[2]/font" ,2)->plaintext;
