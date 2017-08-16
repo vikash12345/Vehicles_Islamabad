@@ -50,7 +50,6 @@ foreach($html->find("/html/body/div/table/tbody/tr[1]/td/form/table/tbody/tr[7]/
 		scraperwiki::save_sqlite(array('name'), array('name' => $reg_no , 'regdate' => $reg_date, 'maker' => $maker, 'model' => $model, 'chas' => $chassis_no, 'engine' => $engine_no, 'owner' => $owner, 'sw' => $sw, 'type' => $type, 'link' => $NewLink));
 		
 	
-	 echo "$reg_no...\n";
   	sleep(1);
 	}
 	else{
